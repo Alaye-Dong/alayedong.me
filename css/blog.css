@@ -1,0 +1,82 @@
+/* Blog 页面样式 */
+.blog-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-intro h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.blog-intro p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.blog-posts {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.post h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.post a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.post-date {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 10px 0;
+}
+
+.post-summary {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    font-size: 1.1rem;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* 分页按钮 */
+.pagination {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pagination a {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
