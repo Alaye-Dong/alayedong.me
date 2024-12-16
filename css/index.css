@@ -1,0 +1,156 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+article,
+nav,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+/* General page structure */
+.page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.item h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    /* Ensures the footer is pushed to the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* From Uiverse.io by kennyotsu-monochromia */
+.page {
+    width: 100%;
+    height: 100%;
+    --color: #E1E1E1;
+    background-color: #F3F3F3;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+}
