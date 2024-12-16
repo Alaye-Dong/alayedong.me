@@ -104,6 +104,15 @@ main {
     color: #555;
 }
 
+.avatar {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
 /* Footer */
 footer {
     color: rgb(0, 0, 0);
