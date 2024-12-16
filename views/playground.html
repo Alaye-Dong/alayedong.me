@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/playground.css">
     <!-- 引入js -->
     <script src="../js/lib/js-confetti.browser.js"></script>
-    
+    <script defer src="./snake/bundle.js"></script>
 </head>
 
 <body class="page" id="root">
@@ -33,9 +33,33 @@
         <div id="plane">
             <i aria-hidden="true">✈</i>
         </div>
-        <script src="../js/plane.js">
+        <script src="../js/plane.js"></script>
 
-        </script>
+        <div id="main">
+            <div id="stage">
+                <div id="snake">
+                    <div></div>
+                </div>
+
+                <div id="food">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div id="score-panel">
+                <div>
+                    SCORE: <span id="score">0</span>
+                </div>
+                <div>
+                    LEVEL: <span id="level">1</span>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            使用↑↓←→控制方向开始游戏🐍，刷新则重新开始
+        </div>
     </main>
 
     <footer>
