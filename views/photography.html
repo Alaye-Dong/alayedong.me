@@ -27,27 +27,34 @@
     <main>
         <section class="photo-gallery">
             <div class="photo-item">
-                <img src="../images/photography/1.avif" alt="Photo 1">
+                <img src="../images/photography/1.avif" alt="Photo 1" class="photo-thumbnail">
             </div>
             <div class="photo-item">
-                <img src="../images/photography/2.avif" alt="Photo 2">
+                <img src="../images/photography/2.avif" alt="Photo 2" class="photo-thumbnail">
             </div>
             <div class="photo-item">
-                <img src="../images/photography/3.avif" alt="Photo 3">
+                <img src="../images/photography/3.avif" alt="Photo 3" class="photo-thumbnail">
             </div>
             <div class="photo-item">
-                <img src="../images/photography/4.avif" alt="Photo 4">
+                <img src="../images/photography/4.avif" alt="Photo 4" class="photo-thumbnail">
             </div>
             <div class="photo-item">
-                <img src="../images/photography/5.avif" alt="Photo 5">
+                <img src="../images/photography/5.avif" alt="Photo 5" class="photo-thumbnail">
             </div>
             <div class="photo-item">
-                <img src="../images/photography/6.avif" alt="Photo 6">
+                <img src="../images/photography/6.avif" alt="Photo 6" class="photo-thumbnail">
             </div>
 
         </section>
-    </main>
 
+        <!-- 模态框 -->
+        <div id="photoModal" class="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </main>
+    <script src="../js/img-modal.js"></script>
     <footer>
         <p>示例摄影图来自https://unsplash.com/explore</p>
         <p>© 2024 Alaye Dong. All Rights Reserved.</p>
